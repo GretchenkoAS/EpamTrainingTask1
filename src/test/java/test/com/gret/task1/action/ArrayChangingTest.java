@@ -4,13 +4,15 @@ import com.gret.task1.action.ArrayChanging;
 import com.gret.task1.builder.ArrayBuilder;
 import com.gret.task1.entity.Array;
 import com.gret.task1.exeption.ArrayException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import static org.testng.AssertJUnit.assertTrue;
 
 public class ArrayChangingTest {
+    static Logger logger = LogManager.getLogger();
     ArrayBuilder arrayBuilder;
     Array array;
 
@@ -30,6 +32,7 @@ public class ArrayChangingTest {
 
     @Test
     public void replaceNegativeElementPositiveTest() throws ArrayException {
+        logger.info("Positive replace test");
         ArrayChanging arrayChanging = new ArrayChanging();
         arrayChanging.replaceNegativeElement(array);
         int[] actual = new int[4];
@@ -42,6 +45,7 @@ public class ArrayChangingTest {
 
     @Test
     public void replaceNegativeElementNegativeTest() throws ArrayException {
+        logger.info("Negative replace test");
         ArrayChanging arrayChanging = new ArrayChanging();
         arrayChanging.replaceNegativeElement(array);
         int[] actual = new int[4];
