@@ -1,0 +1,17 @@
+22:51:13.213 [main] INFO  com.gret.task1.main.Main -- Info msg
+2021-01-19 22:51:41.203 [main] INFO  com.gret.task1.main.Main -- Info msg
+2021-01-20 15:34:55.549 [main] INFO  com.gret.task1.main.Main -- Info msg
+2021-01-21 10:00:34.127 [main] INFO  com.gret.task1.main.Main -- Info msg
+2021-01-21 16:48:43.384 [main] INFO  com.gret.task1.main.ArrayMain -- 123
+2021-01-21 16:49:04.913 [main] INFO  com.gret.task1.main.ArrayMain -- Array{array=[3, 0, 6, 5, 5]}
+2021-01-21 16:52:42.255 [main] DEBUG com.gret.task1.main.ArrayMain -- Array{array=[2, 4, 0, 5, 2]}
+2021-01-21 18:33:24.932 [main] DEBUG com.gret.task1.main.ArrayMain -- 
+Array : 0 8 8 2 7 
+
+2021-01-21 18:33:45.643 [main] DEBUG com.gret.task1.main.ArrayMain -- Array : 8 3 0 0 7 
+
+2021-01-21 18:34:25.187 [main] DEBUG com.gret.task1.main.ArrayMain -- Array : [9, 9, 6, 3, 2, ]
+2021-01-21 18:37:37.759 [main] DEBUG com.gret.task1.main.ArrayMain -- Array : [ 7 4 0 0 2 ]
+2021-01-21 18:45:35.491 [main] DEBUG com.gret.task1.main.ArrayMain -- Array : [ 9 2 9 8 7 ]
+2021-01-21 18:45:55.679 [main] DEBUG com.gret.task1.main.ArrayMain -- Array : [ 9 1 0 3 0 ]
+2021-01-21 19:45:27.068 [main] DEBUG com.gret.task1.main.ArrayMain -- Array : [ 9 5 9 9 5 ]
