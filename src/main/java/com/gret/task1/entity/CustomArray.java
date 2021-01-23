@@ -1,14 +1,17 @@
 package com.gret.task1.entity;
 
-import com.gret.task1.builder.ArrayBuilder;
 import com.gret.task1.exeption.ArrayException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 
-public class Array {
+public class CustomArray {
     private int[] array;
+    static Logger logger = LogManager.getLogger();
 
-    public Array(ArrayBuilder ArrayBuilder) {
-        this.array = ArrayBuilder.getArray();
+    public CustomArray(int... args) {
+        this.array = args;
+        logger.info(this.toString());
     }
 
     public int getLength() {
@@ -23,6 +26,9 @@ public class Array {
         }
     }
 
+    public int[] getArray() {
+        return array.clone();
+    }
 
     public void setElement(int i, int value) throws ArrayException {
         if (checkRange(i)) {
@@ -34,8 +40,6 @@ public class Array {
     private boolean checkRange(int i) {
         return (i >= 0 && i < array.length);
     }
-
-
 
     @Override
     public String toString() {
