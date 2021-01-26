@@ -14,7 +14,7 @@ public class CustomArray {
         logger.info(this.toString());
     }
 
-    public int getLength() {
+    public int size() {
         return array.length;
     }
 

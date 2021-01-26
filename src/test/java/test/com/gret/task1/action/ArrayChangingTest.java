@@ -3,15 +3,12 @@ package test.com.gret.task1.action;
 import com.gret.task1.action.ArrayChanging;
 import com.gret.task1.entity.CustomArray;
 import com.gret.task1.exeption.ArrayException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertTrue;
 
-public class CustomArrayChangingTest {
-    static Logger logger = LogManager.getLogger();
+public class ArrayChangingTest {
     CustomArray customArray;
 
     @BeforeClass
@@ -29,10 +26,7 @@ public class CustomArrayChangingTest {
     public void replaceNegativeElementPositiveTest() throws ArrayException {
         ArrayChanging arrayChanging = new ArrayChanging();
         arrayChanging.replaceNegativeElement(customArray);
-        int[] actual = new int[4];
-        for(int i = 0; i < customArray.getLength(); i++){
-            actual[i] = customArray.getElement(i);
-        }
+        int[] actual = customArray.getArray();
         int[] expected = {1, 2, 3, 4};
         assertTrue("Arrays are not equal", java.util.Arrays.equals(actual, expected));
     }
@@ -41,10 +35,7 @@ public class CustomArrayChangingTest {
     public void replaceNegativeElementNegativeTest() throws ArrayException {
         ArrayChanging arrayChanging = new ArrayChanging();
         arrayChanging.replaceNegativeElement(customArray);
-        int[] actual = new int[4];
-        for(int i = 0; i < customArray.getLength(); i++){
-            actual[i] = customArray.getElement(i);
-        }
+        int[] actual = customArray.getArray();
         int[] expected = {1, 2, 3, 3};
         assertTrue("Arrays are equal", !java.util.Arrays.equals(actual, expected));
     }

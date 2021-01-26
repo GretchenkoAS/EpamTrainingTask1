@@ -3,8 +3,6 @@ package test.com.gret.task1.action;
 import com.gret.task1.action.ArrayCalculation;
 import com.gret.task1.entity.CustomArray;
 import com.gret.task1.exeption.ArrayException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,12 +10,11 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 
-public class CustomArrayCalculationTest {
-    static Logger logger = LogManager.getLogger();
+public class ArrayCalculationTest {
     CustomArray customArray;
 
     @BeforeClass
-    public void setUp() throws ArrayException {
+    public void setUp() {
         int[] arr = { 1, -2, 3, -4 };
         customArray = new CustomArray(arr);
     }
