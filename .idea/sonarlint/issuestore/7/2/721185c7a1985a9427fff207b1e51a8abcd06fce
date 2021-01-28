@@ -1,5 +1,9 @@
 
 c
-java:S3457"AFormat specifiers should be used instead of string concatenation.(ы╝р╥■    8вЎуЇЄ.
+java:S3457G"AFormat specifiers should be used instead of string concatenation.(ы╝р╥■    8юдлкЇ.
+~
+java:S2629G"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ы╝р╥■    8юдлкЇ.
 ~
 java:S2629"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(ы╝р╥■    8вЎуЇЄ.
+c
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ы╝р╥■    8вЎуЇЄ.

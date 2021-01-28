@@ -38,7 +38,22 @@ public class ArrayCalculationTest {
         int actual = arrayCalculation.minElement(customArray);
         int expected = -2;
         assertNotEquals(actual, expected);
+    }
 
+    @Test
+    public void minStreamPositiveTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        int actual = arrayCalculation.minStream(customArray);
+        int expected = -4;
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void minStreamNegativeTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        int actual = arrayCalculation.minStream(customArray);
+        int expected = -2;
+        assertNotEquals(actual, expected);
     }
 
     @Test
@@ -54,6 +69,22 @@ public class ArrayCalculationTest {
         ArrayCalculation arrayCalculation = new ArrayCalculation();
         int actual = arrayCalculation.maxElement(customArray);
         int expected = -4;
+        assertNotEquals(actual, expected);
+    }
+
+    @Test
+    public void maxStreamPositiveTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        int actual = arrayCalculation.maxStream(customArray);
+        int expected = 3;
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void maxStreamNegativeTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        int actual = arrayCalculation.maxStream(customArray);
+        int expected = -2;
         assertNotEquals(actual, expected);
     }
 
@@ -74,6 +105,54 @@ public class ArrayCalculationTest {
     }
 
     @Test
+    public void averageValueStreamPositiveTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        double actual = arrayCalculation.averageValueStream(customArray);
+        double expected = -0.5;
+        assertEquals(actual, expected, 0.00001);
+    }
+
+    @Test
+    public void averageValueStreamNegativeTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        double actual = arrayCalculation.averageValueStream(customArray);
+        double expected = -0.125;
+        assertNotEquals(actual, expected, 0.00001);
+    }
+
+    @Test
+    public void sumAllElementsPositiveTest() throws ArrayException {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        int actual = arrayCalculation.sumAllElements(customArray);
+        int expected = -2;
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void sumAllElementsNegativeTest() throws ArrayException {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        int actual = arrayCalculation.sumAllElements(customArray);
+        int expected = -4;
+        assertNotEquals(actual, expected);
+    }
+
+    @Test
+    public void sumAllElementsStreamPositiveTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        int actual = arrayCalculation.sumAllElementsStream(customArray);
+        int expected = -2;
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void sumAllElementsStreamNegativeTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        int actual = arrayCalculation.sumAllElementsStream(customArray);
+        int expected = -4;
+        assertNotEquals(actual, expected);
+    }
+
+    @Test
     public void numberOfPositiveElementPositiveTest() throws ArrayException {
         ArrayCalculation arrayCalculation = new ArrayCalculation();
         int actual = arrayCalculation.numberOfPositiveElement(customArray);
@@ -90,6 +169,22 @@ public class ArrayCalculationTest {
     }
 
     @Test
+    public void numberOfPositiveElementStreamPositiveTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        long actual = arrayCalculation.numberOfPositiveElementStream(customArray);
+        long expected = 2;
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void numberOfPositiveElementStreamNegativeTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        long actual = arrayCalculation.numberOfPositiveElementStream(customArray);
+        long expected = 3;
+        assertNotEquals(actual, expected);
+    }
+
+    @Test
     public void numberOfNegativeElementPositiveTest() throws ArrayException {
         ArrayCalculation arrayCalculation = new ArrayCalculation();
         int actual = arrayCalculation.numberOfNegativeElement(customArray);
@@ -102,6 +197,22 @@ public class ArrayCalculationTest {
         ArrayCalculation arrayCalculation = new ArrayCalculation();
         int actual = arrayCalculation.numberOfNegativeElement(customArray);
         int expected = 3;
+        assertNotEquals(actual, expected);
+    }
+
+    @Test
+    public void numberOfNegativeElementStreamPositiveTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        long actual = arrayCalculation.numberOfNegativeElementStream(customArray);
+        long expected = 2;
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void numberOfNegativeElementStreamNegativeTest() {
+        ArrayCalculation arrayCalculation = new ArrayCalculation();
+        long actual = arrayCalculation.numberOfNegativeElementStream(customArray);
+        long expected = 3;
         assertNotEquals(actual, expected);
     }
 }

@@ -1,3 +1,10 @@
 
-u
-java:S1488'"_Immediately return this expression instead of assigning it to the temporary variable "average".(…¦¹Š
+¡
+java:S1130"Remove the declaration of thrown exception 'com.gret.task1.exeption.ArrayException', as it cannot be thrown from method's body.(ÕÀòùøÿÿÿÿ8‹ùÕ«ô.
+]	java:S125"<This block of commented-out lines of code should be removed.(º¸úÆùÿÿÿÿ8‹ùÕ«ô.
+œ
+java:S1130"Remove the declaration of thrown exception 'com.gret.task1.exeption.ArrayException', as it cannot be thrown from method's body.(øáÏá8â¾¬ô.
+W	java:S125)"<This block of commented-out lines of code should be removed.(éõ¹#8ùÜ…¬ô.
+]	java:S125"<This block of commented-out lines of code should be removed.(Ã¬üÿÿÿÿ8µ¬ô.
+œ
+java:S1130("Remove the declaration of thrown exception 'com.gret.task1.exeption.ArrayException', as it cannot be thrown from method's body.(‰ôˆÏ8óœ‡¬ô.

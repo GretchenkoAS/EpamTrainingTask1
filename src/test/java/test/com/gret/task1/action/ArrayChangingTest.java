@@ -6,7 +6,8 @@ import com.gret.task1.exeption.ArrayException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import static org.testng.AssertJUnit.assertTrue;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
 
 public class ArrayChangingTest {
     CustomArray customArray;
@@ -28,7 +29,7 @@ public class ArrayChangingTest {
         arrayChanging.replaceNegativeElement(customArray);
         int[] actual = customArray.getArray();
         int[] expected = {1, 2, 3, 4};
-        assertTrue("Arrays are not equal", java.util.Arrays.equals(actual, expected));
+        assertEquals(actual, expected);
     }
 
     @Test
@@ -37,8 +38,25 @@ public class ArrayChangingTest {
         arrayChanging.replaceNegativeElement(customArray);
         int[] actual = customArray.getArray();
         int[] expected = {1, 2, 3, 3};
-        assertTrue("Arrays are equal", !java.util.Arrays.equals(actual, expected));
+        assertNotEquals(actual, expected);
     }
 
+    @Test
+    public void replaceNegativeElementStreamPositiveTest() throws ArrayException {
+        ArrayChanging arrayChanging = new ArrayChanging();
+        arrayChanging.replaceNegativeElementStream(customArray);
+        int[] actual = customArray.getArray();
+        int[] expected = {1, 2, 3, 4};
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void replaceNegativeElementStreamNegativeTest() throws ArrayException {
+        ArrayChanging arrayChanging = new ArrayChanging();
+        arrayChanging.replaceNegativeElementStream(customArray);
+        int[] actual = customArray.getArray();
+        int[] expected = {1, 2, 3, 3};
+        assertNotEquals(actual, expected);
+    }
 
 }

@@ -21,3 +21,9 @@ i
 9src/main/java/com/gret/task1/reader/CustomFileReader.java,b\f\bfa94616ea2c504ea67f9cfa2d152a9c971f50b2
 j
 :src/main/java/com/gret/task1/validator/ArrayValidator.java,b\d\bd5c3cb65f9d7637d6924084cd82ec2d81cd1953
+?
+data/arrays.txt,f\5\f532ab7e7b7392de9f1489e07a229320641c4196
+m
+=src/test/java/test/com/gret/task1/parser/ArrayParserTest.java,7\5\75fb3eed2ba350520617ce3007c6ea63ea4ef10c
+d
+4src/main/java/com/gret/task1/parser/ArrayParser.java,d\4\d4be4272ed671dff5d895e31cac60871633d2c7d

@@ -5,15 +5,10 @@ import com.gret.task1.exeption.ArrayException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.stream.IntStream;
+
 public class ArraySorting {
     static Logger logger = LogManager.getLogger();
-
-    private void swap(CustomArray customArray, int index1, int index2) throws ArrayException {
-        int value1 = customArray.getElement(index1);
-        int value2 = customArray.getElement(index2);
-        customArray.setElement(index1, value2);
-        customArray.setElement(index2, value1);
-    }
 
     public void bubbleSort(CustomArray customArray) throws ArrayException {
         int size = customArray.size();
@@ -68,5 +63,21 @@ public class ArraySorting {
             }
             swap(customArray, i, minIndex);
         }
+        logger.info("sorted array: " + customArray.toString());
+    }
+
+    public void sortStream(CustomArray customArray) throws ArrayException {
+        customArray.setArray(IntStream.of(customArray.getArray())
+                .sorted()
+                .toArray());
+        logger.info("sorted array: " + customArray.toString());
+    }
+
+
+    private void swap(CustomArray customArray, int index1, int index2) throws ArrayException {
+        int value1 = customArray.getElement(index1);
+        int value2 = customArray.getElement(index2);
+        customArray.setElement(index1, value2);
+        customArray.setElement(index2, value1);
     }
 }

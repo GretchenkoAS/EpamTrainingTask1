@@ -30,6 +30,13 @@ public class CustomArray {
         return array.clone();
     }
 
+    public void setArray(int... args) throws ArrayException {
+        if(args == null) {
+            throw new ArrayException("array is null");
+        }
+        this.array = args;
+    }
+
     public void setElement(int i, int value) throws ArrayException {
         if (checkRange(i)) {
             array[i] = value;

@@ -1,12 +1,78 @@
-2021-01-23 12:35:27.252 [main] INFO  com.gret.task1.entity.CustomArray [<init>] -- Array : [ 1 -2 3 -4 ]
-2021-01-23 12:35:27.287 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
-2021-01-23 12:35:27.294 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
-2021-01-23 13:28:43.442 [main] INFO  com.gret.task1.entity.CustomArray [<init>] -- Array : [ 1 -2 3 -4 ]
-2021-01-23 13:28:43.472 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
-2021-01-23 13:28:43.479 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
-2021-01-23 13:42:39.945 [main] INFO  com.gret.task1.entity.CustomArray [<init>] -- Array : [ 1 -2 3 -4 ]
-2021-01-23 13:42:39.968 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
-2021-01-23 13:42:39.971 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
-2021-01-23 13:43:52.866 [main] INFO  com.gret.task1.entity.CustomArray [<init>] -- Array : [ 1 -2 3 -4 ]
-2021-01-23 13:43:52.894 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
-2021-01-23 13:43:52.898 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
+2021-01-28 18:02:51.796 [main] INFO  com.gret.task1.entity.CustomArray [<init>] -- Array : [ 1 -2 3 -4 ]
+2021-01-28 18:02:51.815 [main] INFO  com.gret.task1.action.ArrayCalculation [averageValue] -- average: -0.5
+2021-01-28 18:02:51.820 [main] INFO  com.gret.task1.action.ArrayCalculation [averageValue] -- average: -0.5
+2021-01-28 18:02:51.827 [main] INFO  com.gret.task1.action.ArrayCalculation [averageValueStream] -- average: -0.5
+2021-01-28 18:02:51.829 [main] INFO  com.gret.task1.action.ArrayCalculation [averageValueStream] -- average: -0.5
+2021-01-28 18:02:51.833 [main] INFO  com.gret.task1.action.ArrayCalculation [maxElement] -- max element: 3
+2021-01-28 18:02:51.838 [main] INFO  com.gret.task1.action.ArrayCalculation [maxElement] -- max element: 3
+2021-01-28 18:02:51.842 [main] INFO  com.gret.task1.action.ArrayCalculation [maxStream] -- max element: 3
+2021-01-28 18:02:51.845 [main] INFO  com.gret.task1.action.ArrayCalculation [maxStream] -- max element: 3
+2021-01-28 18:02:51.847 [main] INFO  com.gret.task1.action.ArrayCalculation [minElement] -- min element: -4
+2021-01-28 18:02:51.849 [main] INFO  com.gret.task1.action.ArrayCalculation [minElement] -- min element: -4
+2021-01-28 18:02:51.853 [main] INFO  com.gret.task1.action.ArrayCalculation [minStream] -- min element: -4
+2021-01-28 18:02:51.854 [main] INFO  com.gret.task1.action.ArrayCalculation [minStream] -- min element: -4
+2021-01-28 18:02:51.859 [main] INFO  com.gret.task1.action.ArrayCalculation [numberOfNegativeElement] -- number of negative element: 2
+2021-01-28 18:02:51.884 [main] INFO  com.gret.task1.action.ArrayCalculation [numberOfNegativeElement] -- number of negative element: 2
+2021-01-28 18:02:51.895 [main] INFO  com.gret.task1.action.ArrayCalculation [numberOfNegativeElementStream] -- number of negative element: 2
+2021-01-28 18:02:51.900 [main] INFO  com.gret.task1.action.ArrayCalculation [numberOfNegativeElementStream] -- number of negative element: 2
+2021-01-28 18:02:51.910 [main] INFO  com.gret.task1.action.ArrayCalculation [numberOfPositiveElement] -- number of positive element: 2
+2021-01-28 18:02:51.916 [main] INFO  com.gret.task1.action.ArrayCalculation [numberOfPositiveElement] -- number of positive element: 2
+2021-01-28 18:02:51.925 [main] INFO  com.gret.task1.action.ArrayCalculation [numberOfPositiveElementStream] -- number of positive element: 2
+2021-01-28 18:02:51.949 [main] INFO  com.gret.task1.action.ArrayCalculation [numberOfPositiveElementStream] -- number of positive element: 2
+2021-01-28 18:02:51.952 [main] INFO  com.gret.task1.action.ArrayCalculation [sumAllElements] -- sum: -2
+2021-01-28 18:02:51.959 [main] INFO  com.gret.task1.action.ArrayCalculation [sumAllElements] -- sum: -2
+2021-01-28 18:02:51.965 [main] INFO  com.gret.task1.action.ArrayCalculation [sumAllElementsStream] -- sum: -2
+2021-01-28 18:02:51.970 [main] INFO  com.gret.task1.action.ArrayCalculation [sumAllElementsStream] -- sum: -2
+2021-01-28 18:33:55.484 [main] INFO  com.gret.task1.entity.CustomArray [<init>] -- Array : [ 1 -2 3 -4 ]
+2021-01-28 18:33:55.527 [main] INFO  com.gret.task1.action.ArrayChanging [replaceNegativeElement] -- all negative elements replaced for opposite ones
+2021-01-28 18:33:55.535 [main] INFO  com.gret.task1.action.ArrayChanging [replaceNegativeElement] -- all negative elements replaced for opposite ones
+2021-01-28 18:33:55.544 [main] INFO  com.gret.task1.action.ArrayChanging [replaceNegativeElementStream] -- all negative elements replaced for opposite ones
+2021-01-28 18:33:55.546 [main] INFO  com.gret.task1.action.ArrayChanging [replaceNegativeElementStream] -- all negative elements replaced for opposite ones
+2021-01-28 18:41:03.726 [main] INFO  com.gret.task1.entity.CustomArray [<init>] -- Array : [ 1 -2 3 -4 ]
+2021-01-28 18:41:03.741 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
+2021-01-28 18:41:03.746 [main] INFO  com.gret.task1.action.ArraySorting [bubbleSort] -- sorted array: Array : [ -4 -2 1 3 ]
+2021-01-28 18:41:03.748 [main] INFO  com.gret.task1.action.ArraySorting [selectionSort] -- sorted array: Array : [ -4 -2 1 3 ]
+2021-01-28 18:41:03.752 [main] INFO  com.gret.task1.action.ArraySorting [selectionSort] -- sorted array: Array : [ -4 -2 1 3 ]
+2021-01-28 18:41:03.760 [main] INFO  com.gret.task1.action.ArraySorting [sortStream] -- sorted array: Array : [ -4 -2 1 3 ]
+2021-01-28 18:41:03.764 [main] INFO  com.gret.task1.action.ArraySorting [sortStream] -- sorted array: Array : [ -4 -2 1 3 ]
+2021-01-28 20:45:10.262 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:45:10.270 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:48:05.370 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:48:05.375 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:48:05.380 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:48:05.385 [main] ERROR com.gret.task1.parser.ArrayParser [parseLineToIntArrayStream] -- Parser error
+2021-01-28 20:48:05.398 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:48:05.398 [main] ERROR com.gret.task1.parser.ArrayParser [parseLineToIntArrayStream] -- Parser error
+2021-01-28 20:49:31.789 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:49:31.798 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:49:31.798 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:49:31.802 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:54:27.006 [main] INFO  com.gret.task1.reader.CustomFileReader [readFromFile] -- read string from file : [1 2    3, , zxcv, , 1, 2, 3, , 1234, 1 2 3]
+2021-01-28 20:54:27.013 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:54:27.014 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:54:27.015 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:54:27.015 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:54:27.016 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:54:27.018 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:54:27.023 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:54:27.026 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:55:10.031 [main] INFO  com.gret.task1.reader.CustomFileReader [readFromFile] -- read string from file : [1 2    3, , zxcv, , 1, 2, 3, , 1234, 1 2 3]
+2021-01-28 20:55:10.049 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:10.051 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:10.051 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:10.052 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:10.053 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:10.054 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:10.054 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:55:10.054 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:31.261 [main] INFO  com.gret.task1.reader.CustomFileReader [readFromFile] -- read string from file : [1 2    3, , zxcv, , 1, 2, 3, , 1234, 1 2 3]
+2021-01-28 20:55:31.273 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:31.274 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:31.275 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:31.276 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:31.277 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:55:31.277 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 20:55:31.278 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 20:55:31.279 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 21:02:15.346 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 21:02:15.357 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true

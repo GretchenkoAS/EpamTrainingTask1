@@ -1,19 +1,14 @@
 package com.gret.task1.validator;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ArrayValidator {
+    static Logger logger = LogManager.getLogger();
 
-    private static final String ARRAY_REGEX = "([0-9]+\\s??)+";
-
-
-    public static boolean isStringArray(String str) {
-        boolean result;
-        boolean hasOtherChars = !str.matches(ARRAY_REGEX);
-        if (!hasOtherChars) {
-            result = true;
-        }
-        else{
-            result = false;
-        }
+    public static boolean isStringArray(String arrayString, String delimiter) {
+        boolean result = arrayString.matches("(\\d+(" + delimiter + ")?)+");
+        logger.info(result);
         return result;
     }
 }
