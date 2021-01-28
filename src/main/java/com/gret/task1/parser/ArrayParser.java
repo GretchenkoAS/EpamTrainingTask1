@@ -37,7 +37,9 @@ public class ArrayParser {
         int[] numericArray;
         String stringArray[] = arrayStringFormat.split(DELIMITER_SPACE);
         try {
-            numericArray = Stream.of(stringArray).mapToInt(Integer::parseInt).toArray();
+            numericArray = Stream.of(stringArray)
+                    .mapToInt(Integer::parseInt)
+                    .toArray();
         } catch (NumberFormatException e) {
             logger.error("Parser error");
             throw new ArrayException(e);
