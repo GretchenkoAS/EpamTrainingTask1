@@ -76,3 +76,5 @@
 2021-01-28 20:55:31.279 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
 2021-01-28 21:02:15.346 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
 2021-01-28 21:02:15.357 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
+2021-01-28 23:31:49.327 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- false
+2021-01-28 23:31:49.337 [main] INFO  com.gret.task1.validator.ArrayValidator [isStringArray] -- true
