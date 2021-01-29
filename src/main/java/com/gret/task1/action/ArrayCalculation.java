@@ -52,25 +52,7 @@ public class ArrayCalculation {
         return maxElement;
     }
 
-    public double averageValue(CustomArray customArray) throws ArrayException {
-        int sum = 0;
-        int size = customArray.size();
-        for(int i = 0; i < size; i++){
-           sum += customArray.getElement(i);
-        }
-        double average = (double) sum / customArray.size();
-        logger.info("average: " + average);
-        return average;
-    }
 
-    public double averageValueStream(CustomArray customArray) {
-        int[] array = customArray.getArray();
-        double average = IntStream.of(array)
-                .average()
-                .getAsDouble();
-        logger.info("average: " + average);
-        return average;
-    }
 
     public int sumAllElements(CustomArray customArray) throws ArrayException {
         int sum = 0;
@@ -88,6 +70,22 @@ public class ArrayCalculation {
                 .sum();
         logger.info("sum: " + sum);
         return sum;
+    }
+
+    public double averageValue(CustomArray customArray) throws ArrayException {
+        int sum = this.sumAllElements(customArray);
+        double average = (double) sum / customArray.size();
+        logger.info("average: " + average);
+        return average;
+    }
+
+    public double averageValueStream(CustomArray customArray) {
+        int[] array = customArray.getArray();
+        double average = IntStream.of(array)
+                .average()
+                .getAsDouble();
+        logger.info("average: " + average);
+        return average;
     }
 
     public int numberOfPositiveElement(CustomArray customArray) throws ArrayException {
