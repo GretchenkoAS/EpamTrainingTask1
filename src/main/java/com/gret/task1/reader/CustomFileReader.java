@@ -3,7 +3,6 @@ package com.gret.task1.reader;
 import com.gret.task1.exeption.ArrayException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,8 +18,8 @@ public class CustomFileReader {
         Path path = Paths.get(file);
         List<String> lines;
         if (Files.notExists(path) || Files.isDirectory(path) || !Files.isReadable(path)) {
-            logger.error("resource exception");
-            throw new ArrayException("resource exception");
+            logger.error("resource exception" + file);
+            throw new ArrayException("resource exception" + file);
         }
         try (Stream<String> stream = Files.lines(path)) {
             lines = stream.collect(Collectors.toList());

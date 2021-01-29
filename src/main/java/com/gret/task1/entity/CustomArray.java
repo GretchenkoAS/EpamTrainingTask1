@@ -1,17 +1,12 @@
 package com.gret.task1.entity;
 
 import com.gret.task1.exeption.ArrayException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 
 public class CustomArray {
     private int[] array;
-    static Logger logger = LogManager.getLogger();
 
     public CustomArray(int... args) {
         this.array = args;
-        logger.info(this.toString());
     }
 
     public int size() {

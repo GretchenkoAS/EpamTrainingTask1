@@ -4,8 +4,6 @@ import com.gret.task1.exeption.ArrayException;
 import com.gret.task1.validator.ArrayValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class ArrayParser {

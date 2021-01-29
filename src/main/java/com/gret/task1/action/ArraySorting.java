@@ -4,7 +4,6 @@ import com.gret.task1.entity.CustomArray;
 import com.gret.task1.exeption.ArrayException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.stream.IntStream;
 
 public class ArraySorting {
@@ -37,7 +36,6 @@ public class ArraySorting {
             while (customArray.getElement(rightMarker) > pivot) {
                 rightMarker--;
             }
-
             if (leftMarker <= rightMarker) {
                 this.swap(customArray, leftMarker, rightMarker);
                 leftMarker++;
@@ -72,7 +70,6 @@ public class ArraySorting {
                 .toArray());
         logger.info("sorted array: " + customArray.toString());
     }
-
 
     private void swap(CustomArray customArray, int index1, int index2) throws ArrayException {
         int value1 = customArray.getElement(index1);

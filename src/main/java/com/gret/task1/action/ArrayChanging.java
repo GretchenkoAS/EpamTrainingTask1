@@ -4,7 +4,6 @@ import com.gret.task1.entity.CustomArray;
 import com.gret.task1.exeption.ArrayException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.stream.IntStream;
 
 public class ArrayChanging {

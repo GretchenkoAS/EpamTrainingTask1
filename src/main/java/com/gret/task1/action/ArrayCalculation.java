@@ -4,7 +4,6 @@ import com.gret.task1.entity.CustomArray;
 import com.gret.task1.exeption.ArrayException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.stream.IntStream;
 
 public class ArrayCalculation {
@@ -51,8 +50,6 @@ public class ArrayCalculation {
         logger.info("max element: " + maxElement);
         return maxElement;
     }
-
-
 
     public int sumAllElements(CustomArray customArray) throws ArrayException {
         int sum = 0;

@@ -2,7 +2,6 @@ package test.com.gret.task1.validator;
 
 import com.gret.task1.validator.ArrayValidator;
 import org.testng.annotations.Test;
-
 import static org.testng.Assert.*;
 
 public class ArrayValidatorTest {
